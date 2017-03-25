@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.row {
+    border-bottom: 1px solid #eee;
+}
+
+table {
+    border-collapse: collapse; 
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+thead {
+    background-color: #f8f8f8; 
+}
+
+th {
+    background-color: #f8f8f8; 
+    position: relative;
+}
+
+.column {
+    display: inline-block;
+    width: 70px;
+    border-left: 1px solid #eee;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    outline: none;
+    line-height: 2.2;
+}
+
+.btn {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.delete {
+    left: 5px;
+    right: initial;
+}
+
+.column:hover .add,
+.column:hover .delete {
+    display: block;
+}
+
+input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    overflow: hidden;
+    border: 0;
+    outline: none;
+    padding: 5px;
+}
+
+.editable {
+    border: 2px solid #5292f7;
+}
